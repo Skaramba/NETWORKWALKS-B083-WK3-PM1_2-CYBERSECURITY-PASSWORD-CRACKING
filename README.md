@@ -22,38 +22,43 @@ I used this online system to get the hash of each file. On the system I uploaded
 
 **2. Using Hash to get Password: John the Ripper**\
 After the successful installation and config of Johnny, I uploaded the the text and started the process of cracking (attack). It processed and after it was done, the password was generated. 
-<img src="cracked.png" alt="Password crack output" width="850" height="500">
+<img src="johnny.png" alt="Password crack output" width="850" height="500">
 
 I copied the password, opened the locked PDF file, pasted the password on the password field and unlocked the document.
 <img src="openpdf.png" alt="Password window" width="850" height="500">
 
 The content of the file was visible and accessable, mission completed.
-<img src="unlockedp1.png" alt="PDF1 Unlocked" width="850" height="500">
+<img src="unlockedp3.png" alt="PDF3 Unlocked" width="850" height="500">
 
 PDF2
 <img src="unlockedp2.png" alt="PDF2 Unlocked" width="850" height="500">
 
+Johnny could not determine the password for the file My Locked PDF1.pdf, so I tried getting the password using the Networkwalks password-cracker.
 
 ## Task 2:
 **1. Getting File Hash: networkwalks.com - Hash Calculator**\
 I used this online system to get the hash of each file. On the system I uploaded the each locked pdf file and generated the hash key. After the key was generated, I copied it to clipboard.
-<img src="networkwalks_hash.png" alt="Networkwalks generated hash" width="850" height="500">
+<img src="networkwalks_hash2.png" alt="Networkwalks generated hash" width="850" height="500">
 
 **2. Using Hash to get Password: networkwalks.com - Password Cracker**\
 After the copying on the clipboard, I switched to this system, pasted the copied hash key and started the process of cracking (attack). 
 <img src="networkwalks_cracking_inprog.png" alt="Networkwalks password cracking inprogress" width="850" height="500">
 
-It processed and after it was done, the password was generated. 
-<img src="networkwalks_cracking_done.png" alt="Networkwalks password cracking completed" width="850" height="500">
+The password was not found, so I had to upload another password list.
+<img src="access_denied.png" alt="Access Denied" width="850" height="500">
+
+The second,  list list also failed, so I uploaded a third one, which has morw passwords on it. It took sometime while processing/verifying and after it was done, the password was generated. 
+<img src="got-it.png" alt="Networkwalks password cracking completed" width="850" height="500">
 
 I copied the password, opened the locked PDF file, pasted the password on the password field and unlocked the document.
 The content of the file was visible and accessable, mission completed.
-<img src="unlockedp3.png" alt="PDF3 Unlocked" width="850" height="500">
+<img src="granted.png" alt="PDF1 Unlocked" width="850" height="500">
 
 
 ## Tools Used
 |Tool	|Purpose|
-| ----|-------|
+| ----|-------| 
+|Windows 11 | For installing & running John the Ripper application |
 | onlinehashcrack.com - PDF hash Extractor | To generate the hash key of the pdf file |
 | John the Ripper | To read the hashed key and convert it to readable password |
 | networkwalks.com - Hash Calculator | To generate the hash key of the pdf file |
